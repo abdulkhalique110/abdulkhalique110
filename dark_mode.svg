@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="520px" font-size="16px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold'), local('DejaVu Sans Mono'), local('Menlo');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 109%;
+size-adjust: 109%;
+}
+.key {fill: #ffa657;}
+.value {fill: #a5d6ff;}
+.addColor {fill: #3fb950;}
+.delColor {fill: #f85149;}
+.cc {fill: #616e7f;}
+.ascii {fill: #c9d1d9; font-size: 7px;}
+text, tspan {white-space: pre;}
+</style>
+<rect width="985px" height="520px" fill="#161b22" rx="15"/>
+
+<text x="15" y="30" class="ascii">
+<tspan x="12" y="26.0"> </tspan>
+<tspan x="12" y="34.0"> </tspan>
+<tspan x="12" y="42.0">                                           /t1?-+&lt;&lt;&lt;&lt;+-{t</tspan>
+<tspan x="12" y="50.0">                                 {+!:,"^^'''^"::;;I!;:;;I&gt;i+1__)/</tspan>
+<tspan x="12" y="58.0">                            [l"'.^'^^^^``,""``";I!li+&lt;l:!&gt;i&lt;~+fY(1)</tspan>
+<tspan x="12" y="66.0">                          !'  .''...`,",`.",:;""I&gt;[)?)}&gt;"!I!_l1/{r_?</tspan>
+<tspan x="12" y="74.0">                        _' ...'''`''.;~;/;,lI,1,i]~}]t)-iil&lt;1[!"li?r(</tspan>
+<tspan x="12" y="82.0">                       ;  ...''``''`',i"-!^+Ii[i&gt;-&gt;&lt;I(n&lt;(]I[}tI'"^xU}f</tspan>
+<tspan x="12" y="90.0">                      ` .  ......'`'^"``"''^`Il`,I:~I]t-c-{_1}.``1)v&gt;(v</tspan>
+<tspan x="12" y="98.0">                    I    .''....''``^"."'. '^'''`'`:l++1|Ycjf,";/&lt;tft:)Lv</tspan>
+<tspan x="12" y="106.0">                       ..'''`'`''`''^'``'""`^^"^''''''^`i{fJl,}u-11Y-,_{zc</tspan>
+<tspan x="12" y="114.0">                    .   .'````'``'`^"::Ii&lt;+][_&gt;l!&gt;&lt;&gt;+-_&lt;&lt;~]l-//|t}z( ;~1rYr</tspan>
+<tspan x="12" y="122.0">                  &lt; . .^""^^`'''^",&lt;)zXunvcCZQLCOwqpbkhCc1lI+&lt;1rxJ/.;;+f/f|</tspan>
+<tspan x="12" y="130.0">                  ;I  '^^"^```"I&gt;?jYQmpwmmmwpkahhhho*#*aqu1_&gt;_/vu_"Ii-+|((](</tspan>
+<tspan x="12" y="138.0">                 }i: .."","^"l&lt;])vZwZZwwqwmwpkhhkaoo#MW#hmLYc0Lv?-]|(ff)[}&gt;:</tspan>
+<tspan x="12" y="146.0">                 -i` ..'",,:I-rXz0pqqqpdddddbbhhhho#W8%%&amp;WM*apJX((cr-({&gt;&lt;,I&gt;</tspan>
+<tspan x="12" y="154.0">                 l!^.  ^^";,&lt;nmqpddddddbhahhkkkhkha#W%BBB%%8W*Zr|{rf&gt;^III&lt;"-</tspan>
+<tspan x="12" y="162.0">                  :`.I''^""[Xwwppdbkkbdpdbkkbddddba#W8BBBBB%%%8bn{}+l!;&gt;!:l!</tspan>
+<tspan x="12" y="170.0">                   ".&gt;&lt;'",tphqmpddpmZ0QLLZwwwqwwdbhoW&amp;B$$$$$$$BBW0/-;+&lt;_&lt;^!</tspan>
+<tspan x="12" y="178.0">                   .''i, xapn1???+lI!&lt;+_}rXQ00Q0Jr/)){((tcJmwoW%$$k|l_]1:+</tspan>
+<tspan x="12" y="186.0">                    ~;;"^wpYrzcnfr(]_](jtnCQLOZZYj(]&lt;lIi+?|v0pb*%%$mIi&lt;?</tspan>
+<tspan x="12" y="194.0">                      !l^YbqkwCzv{i;;~]u0Oww0bM#hOr[_+i?fzJQZ*&amp;M&amp;%@O&lt;l</tspan>
+<tspan x="12" y="202.0">                       i'LokdJt{Zzl'&gt;ti&gt;r0qdb&amp;@8*xl;1Xi`^QJrcZW%BB$r:</tspan>
+<tspan x="12" y="210.0">                     wOU!m#bdwdd0Cr11[}(vZkh*B$@%br][))r0*WMW&amp;&amp;B@$MfJWo</tspan>
+<tspan x="12" y="218.0">                     vz8np*kkkdpqm0YvvUZphooW@$$$$BaZCJmboW%@B@@@$bw$0O</tspan>
+<tspan x="12" y="226.0">                     UcWzhoaahkdqwmmwqpdhoooW$$$$@@$@%W##M&amp;%@@$$@$adBo</tspan>
+<tspan x="12" y="234.0">                      mQ}p#oaahbddpppppbhoaaM@@@@@@%B%88&amp;&amp;%B$$$$@@hrwa</tspan>
+<tspan x="12" y="242.0">                       0?JMooahhkbdpwmbo#Wob*B$$$$$Mh&amp;%%%BB@$$$$@$q(d</tspan>
+<tspan x="12" y="250.0">                       bCfo#oahkbdpmZZkdUUZwp*qL0*BMkd*&amp;8B@$$$$$$&amp;Qpa</tspan>
+<tspan x="12" y="258.0">                       pBOOWaakhbpmZwqmQzzzZp8qJ0a88&amp;odaW8B@$@@@$qM$</tspan>
+<tspan x="12" y="266.0">                        qaU#oakkdqppZw0Y(|xxjuUmda&amp;%8%8#*&amp;%B@B@@8b%</tspan>
+<tspan x="12" y="274.0">                          r0hhhkdkL}--}{{)f(]](vXLzzXUb8%88%%%8Mb</tspan>
+<tspan x="12" y="282.0">                           nLmbdaOlI!?vUUYnfrzZpZZmY-])Y8B%&amp;W#hdm</tspan>
+<tspan x="12" y="290.0">                           nULZdhO1[?()rrttj/fUQQpdJ)[UwW%&amp;Mokkk</tspan>
+<tspan x="12" y="298.0">                            U0ZqpbwLLqqwwZQOQZqaWM8@&amp;bhW&amp;W#*ohop</tspan>
+<tspan x="12" y="306.0">                             0qpdpppqmmZQr}]]1rJdh*#WMaMWM##oha</tspan>
+<tspan x="12" y="314.0">                              0Zwq0mppqQJr1][|Lqo*W8&amp;*a*#MMoqd</tspan>
+<tspan x="12" y="322.0">                               pcft0Uvcx//|/(|XZwhWWMkph*hqLO</tspan>
+<tspan x="12" y="330.0">                              m*pc{}[]?[{-+&lt;~+}|nLmdkpOCcuZW*</tspan>
+<tspan x="12" y="338.0">                              mhdkwx-i;!i&gt;&lt;&lt;&gt;&gt;_(|(fxxxtrLM$$M</tspan>
+<tspan x="12" y="346.0">                              pkpqpbdJ1+l,':I!I&gt;_+ffvqa&amp;B%%@hz</tspan>
+<tspan x="12" y="354.0">                            ]lbkpqwwphadwUjf)/rJpoB$$$8WW8%$a*</tspan>
+<tspan x="12" y="362.0">                           q],*dpqqqpppddbpqpw#$$$$@B%MMM8$%h&amp;@C</tspan>
+<tspan x="12" y="370.0">                           qmumhqwwwqpppqwwwmb##M&amp;%B%W#WB8hkWW@LU</tspan>
+<tspan x="12" y="378.0">                          ndQQjYqdwmwqpppwmZ0paoM&amp;%%&amp;WWaJUh88W$O/&amp;w</tspan>
+<tspan x="12" y="386.0">                         j)dLQCxfcZqwmwqwmZ0QOph#&amp;%&amp;h0f(QW8W&amp;&amp;B[(oaaZ</tspan>
+<tspan x="12" y="394.0">                      YzX/&gt;UXJJLvj(jXQmwwmO00Opa*amn-~uM%WW&amp;W&amp;W;/phbkhbOYJ0QC</tspan>
+<tspan x="12" y="402.0">                 r)1(xxfu|,&lt;zQLQ0cf1}}(uYJCUzcYYx}&lt;?xkB&amp;WW&amp;&amp;&amp;%hIfLmdbdpp0vrcCQZmwmZQ</tspan>
+<tspan x="12" y="410.0">             j/)?_}(|/tj()!&gt;ZLLJcjtrnUj-+}(||(}+_(xth$&amp;M8&amp;&amp;&amp;W${!YQZZwdOOqYXvffxuUQOZwqpqm</tspan>
+<tspan x="12" y="418.0">      ccuxf)[[{-?f/]/t/|1)+_QCUcxjfftfJQ(lIi_+?zLCxI`|*$&amp;W&amp;&amp;W@?|0LwpZZ0YdCzwJrnrnvXLL0Omqdkk</tspan>
+<tspan x="12" y="426.0">UUYznrt(1[]]{)1{?-[1(11){1?!JUxjj/tjj/-i~?-i,IZWp0f&gt;: ,v&amp;$8WM$[nm0ZmZZ0JQOULL0LUvxxvJCQQOZmw</tspan>
+<tspan x="12" y="434.0">rt|(()1}]][{)1)1))}{{}}{{1}&gt;zrxrffr1&gt;::i&gt;lI&gt;&lt;z#kppZ};;" !Y&amp;$%8+Jm0ZO0ZCzC0LmZOQCvxxxvcYJQ0mw</tspan>
+<tspan x="12" y="442.0">()(()1{[[}1)1))1){}{}}}}{{1ixxvn(_,.',IiIII^+*okaodw+,;,' lc8W_w0QQQ0ZLJQLCJOmQCutrxjuYJLOZw</tspan>
+<tspan x="12" y="450.0">((()){{{}}{{}))1}}[}}}}}{})ifx]l.^^";I;:II+I}Moo**abtl:Y}"".&gt;t?mLCLC0ZOQLUXrJbCnx/trnuXCQOZw</tspan>
+<tspan x="12" y="458.0">)(()11{{}[[[[11{}{}}}}}}{}1~l;I&lt;+-?I~-_iI!+i/**o**od];|MYYc]I |OCJLL00CLLXnjJdvj/|tnvzYL0ZZw</tspan>
+<tspan x="12" y="466.0">(((())1{[?][[1){{{}}}}}}{}1[`i-{)1|+!-+-li]~xhbbkk#zl&lt;0drYr_~"r0JLO0Qrf0Qxfx0wjf||jnzJJ0ZZZm</tspan>
+</text>
+<text x="410" y="30" fill="#c9d1d9">
+<tspan x="410" y="30">abdulkhalique110 —————————————————————————————————————</tspan>
+<tspan x="410" y="50"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ................................... </tspan><tspan class="value">Ubuntu Linux</tspan></tspan>
+<tspan x="410" y="70"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value" id="age_data">XX years, XX months, XX days</tspan></tspan>
+<tspan x="410" y="90"><tspan class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">FAST NUCES, Peshawar</tspan></tspan>
+<tspan x="410" y="110"><tspan class="cc">. </tspan><tspan class="key">Degree</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">BS Computer Science</tspan></tspan>
+<tspan x="410" y="130"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">Visual Studio Code</tspan></tspan>
+<tspan x="410" y="170"><tspan class="cc">. </tspan><tspan class="key">Languages.Programming</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">C, C++, JavaScript</tspan></tspan>
+<tspan x="410" y="190"><tspan class="cc">. </tspan><tspan class="key">Languages.Computer</tspan>:<tspan class="cc"> ...................... </tspan><tspan class="value">HTML, CSS</tspan></tspan>
+<tspan x="410" y="210"><tspan class="cc">. </tspan><tspan class="key">Languages.Real</tspan>:<tspan class="cc"> ...................... </tspan><tspan class="value">Urdu, English</tspan></tspan>
+<tspan x="410" y="250"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Software</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">Linux, Qt, Web apps</tspan></tspan>
+<tspan x="410" y="270"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">DIY electronics, Retro gaming</tspan></tspan>
+<tspan x="410" y="310">- Contact ————————————————————————————————————————————</tspan>
+<tspan x="410" y="330"><tspan class="cc">. </tspan><tspan class="key">Email.Personal</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">abdulkhaliquenotiar@gmail.com</tspan></tspan>
+<tspan x="410" y="350"><tspan class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">abdul-khalique-notiar-42a304336</tspan></tspan>
+<tspan x="410" y="370"><tspan class="cc">. </tspan><tspan class="key">GitHub</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">abdulkhalique110</tspan></tspan>
+<tspan x="410" y="410">- GitHub Stats ———————————————————————————————————————</tspan>
+<tspan x="410" y="430"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc" id="repo_data_dots"> ..... </tspan><tspan class="value" id="repo_data">0</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value" id="contrib_data">0</tspan>} | <tspan class="key">Stars</tspan>:<tspan class="cc" id="star_data_dots"> ........... </tspan><tspan class="value" id="star_data">0</tspan></tspan>
+<tspan x="410" y="450"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc" id="commit_data_dots"> ........................ </tspan><tspan class="value" id="commit_data">0</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc" id="follower_data_dots"> ........ </tspan><tspan class="value" id="follower_data">0</tspan></tspan>
+<tspan x="410" y="470"><tspan class="cc">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="cc" id="loc_data_dots"> ........ </tspan><tspan class="value" id="loc_data">0</tspan> ( <tspan class="addColor" id="loc_add">0</tspan><tspan class="addColor">++</tspan>, <tspan id="loc_del_dots"> </tspan><tspan class="delColor" id="loc_del">0</tspan><tspan class="delColor">--</tspan> )</tspan>
+</text>
+</svg>
