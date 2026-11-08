@@ -258,32 +258,60 @@ def find_and_replace(root, element_id, new_text):
         element.text = new_text
 
 
-def justify_format(root, element_id, new_text, length=0):
-    """Sets the value and adjusts the dots before it so the column stays aligned."""
-    if isinstance(new_text, int):
-        new_text = '{:,}'.format(new_text)
-    new_text = str(new_text)
-    find_and_replace(root, element_id, new_text)
-    just_len = max(0, length - len(new_text))
-    if just_len <= 2:
-        dot_string = {0: '', 1: ' ', 2: '. '}[just_len]
-    else:
-        dot_string = ' ' + ('.' * just_len) + ' '
-    find_and_replace(root, f'{element_id}_dots', dot_string)
+LINE_WIDTH = 54   # every info line is padded with dots to this many characters
+BAR_COLUMN = 34   # column of the "|" separator in the two stats lines
+
+
+def fmt(value):
+    """12345 -> '12,345' (strings are returned unchanged)."""
+    return '{:,}'.format(value) if isinstance(value, int) else str(value)
+
+
+def set_text(root, element_id, text):
+    find_and_replace(root, element_id, text)
+
+
+def set_dots(root, element_id, count):
+    """Writes ' ....... ' (count dots) into the <element_id>_dots element."""
+    find_and_replace(root, element_id + '_dots', ' ' + '.' * max(1, count) + ' ')
 
 
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
+    """
+    Fills dark_mode.svg with the numbers and recalculates the dots so every line
+    ends at the same right edge, whatever the length of the numbers.
+    """
     tree = etree.parse(filename)
     root = tree.getroot()
-    find_and_replace(root, 'age_data', age_data)
-    justify_format(root, 'commit_data', commit_data, 16)
-    justify_format(root, 'star_data', star_data, 10)
-    justify_format(root, 'repo_data', repo_data, 4)
-    justify_format(root, 'contrib_data', contrib_data)
-    justify_format(root, 'follower_data', follower_data, 8)
-    justify_format(root, 'loc_data', loc_data[2], 9)
-    justify_format(root, 'loc_add', loc_data[0])
-    justify_format(root, 'loc_del', loc_data[1], 7)
+
+    age = str(age_data)
+    repos, contrib, stars = fmt(repo_data), fmt(contrib_data), fmt(star_data)
+    commits, followers = fmt(commit_data), fmt(follower_data)
+    net, added, deleted = fmt(loc_data[2]), fmt(loc_data[0]), fmt(loc_data[1])
+
+    # ". Uptime: ..... value"
+    set_text(root, 'age_data', age)
+    set_dots(root, 'age_data', LINE_WIDTH - 5 - len('Uptime') - len(age))
+
+    # ". Repos: ... 6 {Contributed: 7} | Stars: ..... 1"
+    set_text(root, 'repo_data', repos)
+    set_text(root, 'contrib_data', contrib)
+    set_text(root, 'star_data', stars)
+    set_dots(root, 'repo_data', BAR_COLUMN - 27 - len(repos) - len(contrib))
+    set_dots(root, 'star_data', LINE_WIDTH - BAR_COLUMN - 10 - len(stars))
+
+    # ". Commits: ..... 6 | Followers: ..... 3"
+    set_text(root, 'commit_data', commits)
+    set_text(root, 'follower_data', followers)
+    set_dots(root, 'commit_data', BAR_COLUMN - 13 - len(commits))
+    set_dots(root, 'follower_data', LINE_WIDTH - BAR_COLUMN - 14 - len(followers))
+
+    # ". Lines of Code: ..... 1,610 ( 1,621++, 11-- )"
+    set_text(root, 'loc_data', net)
+    set_text(root, 'loc_add', added)
+    set_text(root, 'loc_del', deleted)
+    set_dots(root, 'loc_data', LINE_WIDTH - 29 - len(net) - len(added) - len(deleted))
+
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
 
