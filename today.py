@@ -286,12 +286,8 @@ def cache_builder(edges, owner_id):
         fully_cached = False
         owner, repo_name = node['nameWithOwner'].split('/')
 
-        try:
-            added, deleted, mine = recursive_loc(owner, repo_name, owner_id)
-            cache[repo_hash] = [total_commits, mine, added, deleted]
-        except Exception as error:
-            print('Could not count', node['nameWithOwner'], '->', error)
-            cache.setdefault(repo_hash, [0, 0, 0, 0])
+        added, deleted, mine = recursive_loc(owner, repo_name, owner_id)
+        cache[repo_hash] = [total_commits, mine, added, deleted]
 
         save_cache(cache, order + [key for key in cache if key not in order])
 
