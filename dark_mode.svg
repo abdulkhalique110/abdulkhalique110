@@ -1,13 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="520px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Consolas,'DejaVu Sans Mono','Liberation Mono',Menlo,monospace" width="985px" height="520px" font-size="15px">
 <style>
-@font-face {
-src: local('Consolas'), local('Consolas Bold'), local('DejaVu Sans Mono'), local('Menlo');
-font-family: 'ConsolasFallback';
-font-display: swap;
--webkit-size-adjust: 109%;
-size-adjust: 109%;
-}
 .key {fill: #ffa657;}
 .value {fill: #a5d6ff;}
 .addColor {fill: #3fb950;}
