@@ -2,11 +2,15 @@ name: Update profile stats
 
 on:
   schedule:
-    - cron: '0 */8 * * *'   # every 8 hours
-  workflow_dispatch:          # lets you run it manually from the Actions tab
+    - cron: '0 */8 * * *'
+
+  workflow_dispatch:
+
   push:
     branches: [main]
-    paths: [today.py]
+    paths:
+      - today.py
+      - .github/workflows/build.yaml
 
 permissions:
   contents: write
@@ -18,28 +22,49 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: pip
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Update dark_mode.svg
+      - name: Generate SVG
         run: python today.py
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: ${{ github.repository_owner }}
 
-      - name: Commit changes
+      - name: Validate generated SVG
         run: |
-          git config user.name  "github-actions[bot]"
+          test -s dark_mode.svg
+          python -c "from lxml import etree; etree.parse('dark_mode.svg'); print('SVG XML is valid')"
+
+      - name: Show generated changes
+        run: |
+          git status --short
+          git diff -- dark_mode.svg
+          git diff --check
+
+      - name: Commit and push generated files
+        run: |
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git diff --cached --quiet || git commit -m "Update profile stats"
-          git pull --rebase -X theirs origin main
-          git push
+
+          git add -- dark_mode.svg cache/
+
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Update profile statistics"
+            git push origin HEAD:main
+          fi
